@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function App() {
+function Hallo() {
     return (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-8">
                     <div className="card">
-                        <div className="card-header">løb!</div>
+                        <div className="card-header">Hallo my friend</div>
 
-                        <div className="card-body">I'm an example component!</div>
+                        <div className="card-body">løb alt hvad du kan</div>
                     </div>
                 </div>
             </div>
@@ -17,8 +17,8 @@ function App() {
     );
 }
 
-export default App;
+export default Hallo;
 
-if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
+if (document.getElementById('hallo')) {
+    ReactDOM.render(<Hallo />, document.getElementById('hallo'));
 }
