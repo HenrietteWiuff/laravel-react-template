@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\OpretbrugerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,10 @@ Route::get('/hallo', function () {
     return view('hallo');
 });
 
+// Route::get('/auth/nybruger', function () {
+//     return view('/auth/nybruger');
+// });
+Route::get('opretbruger', [App\Http\Controllers\OpretbrugerController::class, 'opretbruger']);
+Route::post('create', [App\Http\Controllers\OpretbrugerController::class, 'create'])->name('auth.create');
+
+Route::post('opretbruger', [App\Http\Controllers\OpretbrugerController::class, 'post']);
